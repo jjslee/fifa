@@ -5,13 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FIFA World Cup 2026 Sticker Book</title>
   <style>
-    body { margin: 0; padding: 0; font-family: sans-serif; }
-    .container { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+    body { margin: 0; padding: 0; font-family: Georgia, serif; background-color: #f9f5f0; color: #1a1a1a; }
+    .hero {
+      background: linear-gradient(135deg, #003087 0%, #c8102e 100%);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      margin: 0 0 0.3rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .hero .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      margin: 0;
+      font-style: italic;
+    }
+    .trophy {
+      margin: 2rem auto 0;
+      display: block;
+      width: 160px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .welcome-box {
+      background: white;
+      border-left: 5px solid #c8102e;
+      border-radius: 4px;
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    .welcome-box p { margin: 0.6rem 0; line-height: 1.7; font-size: 1.05rem; }
+    .welcome-box a { color: #c8102e; }
+    .rules {
+      display: flex;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+    .rule-card {
+      flex: 1;
+      min-width: 180px;
+      background: white;
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      text-align: center;
+    }
+    .rule-card .icon { font-size: 1.8rem; margin-bottom: 0.4rem; }
+    .rule-card p { margin: 0; font-size: 0.9rem; line-height: 1.5; color: #444; }
+    .viz-label {
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #003087;
+      margin: 2rem 0 0.5rem;
+      border-bottom: 2px solid #c8102e;
+      padding-bottom: 0.3rem;
+    }
+    .credit { font-size: 0.78rem; color: #999; margin-top: 1rem; text-align: right; }
+    .credit a { color: #999; }
   </style>
 </head>
 <body>
+
+  <div class="hero">
+    <h1>⚽ FIFA World Cup 2026</h1>
+    <p class="subtitle">Official Panini Sticker Book Tracker</p>
+    <img class="trophy"
+         src="https://pzpn.pl/public/system/images/articles/6837/10359-zoom.jpg?ts=1a74e8d1aae5c350e20bd38eb2ddf577"
+         alt="FIFA World Cup Trophy" />
+  </div>
+
   <div class="container">
-    <h1>FIFA World Cup 2026 Sticker Book</h1>
+
+    <div class="welcome-box">
+      <p>👋 <strong>Hello and welcome to our sticker book!</strong></p>
+      <p>The 2026 FIFA World Cup is coming — and so is the hunt for stickers. Have a look below at which stickers we still need and which ones we have as doubles, and let's make some trades happen!</p>
+      <p>Whether you're a seasoned swapper or new to the sticker game, everyone is welcome. The more trades the merrier — let's fill these albums together!</p>
+      <p>📬 If you'd like to make a trade, just message me at work or email me directly: <a href="mailto:jjslee79@gmail.com">jjslee79@gmail.com</a></p>
+    </div>
+
+    <div class="rules">
+      <div class="rule-card">
+        <div class="icon">🔍</div>
+        <p>Browse the stickers below to see what we <strong>need</strong> and what we have as <strong>doubles</strong>.</p>
+      </div>
+      <div class="rule-card">
+        <div class="icon">🤝</div>
+        <p>Got a sticker we need? We'll swap it for one of our doubles — fair and square.</p>
+      </div>
+      <div class="rule-card">
+        <div class="icon">📦</div>
+        <p>Trades can be done in person or by post. Just get in touch and we'll sort it out!</p>
+      </div>
+    </div>
+
+    <div class="viz-label">Browse Stickers</div>
 
     <div class="flourish-embed flourish-cards" data-src="visualisation/29448018">
       <script src="https://public.flourish.studio/resources/embed.js"></script>
@@ -20,9 +116,9 @@
       </noscript>
     </div>
 
-    <p style="font-size:0.8em; color:#666;">
-      Chart made with <a href="https://flourish.studio" target="_blank">Flourish</a>
-    </p>
+    <p class="credit">Chart made with <a href="https://flourish.studio" target="_blank">Flourish</a></p>
+
   </div>
+
 </body>
 </html>
