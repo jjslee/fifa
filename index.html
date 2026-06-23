@@ -106,7 +106,42 @@
 
     .rule-card .icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
     .rule-card p { font-size: 0.88rem; line-height: 1.55; color: #444; }
+    
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
 
+    .kpi-card {
+      background: white;
+      border-radius: 3px;
+      padding: 1.2rem 1.4rem;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+      border-top: 3px solid #c8102e;
+    }
+
+    .kpi-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 0.35rem;
+    }
+
+    .kpi-value {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.4rem;
+      line-height: 1;
+      color: #001f6b;
+      letter-spacing: 1px;
+    }
+
+    .kpi-value.complete { color: #c8102e; }
+    
     .section-label {
       font-size: 0.72rem;
       font-weight: 600;
@@ -129,6 +164,7 @@
 
     @media (max-width: 560px) {
       .rules { grid-template-columns: 1fr; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
@@ -173,6 +209,25 @@
       <div class="rule-card">
         <div class="icon">📦</div>
         <p>Trades in person or by post. Just get in touch and we'll sort it out!</p>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Have</div>
+        <div class="kpi-value">820</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Need</div>
+        <div class="kpi-value">150</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Doubles</div>
+        <div class="kpi-value">551</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Complete</div>
+        <div class="kpi-value complete">83.7%</div>
       </div>
     </div>
 
