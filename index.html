@@ -162,6 +162,41 @@
 
     .credit a { color: #bbb; }
 
+	.download-box {
+	  background: white;
+	  border-radius: 4px;
+	  padding: 1.4rem 1.8rem;
+	  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+	  margin-top: 1.5rem;
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  gap: 1rem;
+	}
+
+	.download-box p {
+	  font-size: 0.9rem;
+	  color: #444;
+	  line-height: 1.5;
+	}
+
+	.download-btn {
+	  display: inline-block;
+	  background: #c8102e;
+	  color: white;
+	  font-family: 'Inter', sans-serif;
+	  font-size: 0.78rem;
+	  font-weight: 600;
+	  letter-spacing: 2px;
+	  text-transform: uppercase;
+	  padding: 0.7rem 1.4rem;
+	  border-radius: 3px;
+	  text-decoration: none;
+	  white-space: nowrap;
+	}
+
+	.download-btn:hover { background: #a50d26; }
+
     @media (max-width: 560px) {
       .rules { grid-template-columns: 1fr; }
       .kpi-grid { grid-template-columns: repeat(2, 1fr); }
@@ -241,6 +276,11 @@
     </div>
 
     <p class="credit">Chart made with <a href="https://flourish.studio" target="_blank">Flourish</a></p>
+	
+	<div class="download-box">
+		<p>📥 Download our current list to see what we need and what we have as doubles.</p>
+		<a class="download-btn" href="fifa_2026_sticker_trade.xlsx" download>Download xlsx</a>
+	</div>
 
   </div>
 
